@@ -46,7 +46,7 @@ session_start();
         <button name = 'login'>Log In</button>
         <p>
           <center>New User? <a href="signup.php">Sign Up</a></center>
-          <center><a href="#">Forgot Password?</a></center>
+          <center><a href="forgotpassword.php">Forgot Password?</a></center>
         </p>
 
     </form>

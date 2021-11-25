@@ -21,5 +21,11 @@ class User extends db_connection{
         return $this->db_query($sql);
     }
 
+    public function update_password($email, $password) {
+        $sql = "UPDATE `users` SET `password`='$password' WHERE `email` = '$email'";
+
+        return $this->db_query($sql);
+    }
+
 
 }

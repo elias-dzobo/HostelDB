@@ -1,3 +1,8 @@
+<?php
+// start session so that the errors can be available in this file
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,17 +23,17 @@
   </body>
     <div class="background">
     </div>
-    <form>
+    <form method='POST' action='./function/forget_password.php' enctype="multipart/form-data" onsubmit="return validateForm(event);">
         <h3>Forgot Password?</h3>
         <label for="email">Email</label>
-        <input type="text" placeholder="Enter your email" id="username">
+        <input type="text" placeholder="Enter your email" id="email" name='email'>
 
         <label for="password">Password</label>
-        <input type="text" placeholder="Enter your new password" id="password">
+        <input type="password" placeholder="Enter your new password" id="password" name='password'>
 
         <label for="confirmpassword">Confirm Password</label>
-        <input type="password" placeholder="Confirm your new password" id="password">
-        <button>Reset Password</button>
+        <input type="password" placeholder="Confirm your new password" id="password" name='password2'>
+        <button name='submit'>Reset Password</button>
     </form>
 </body>
 </html>

@@ -53,4 +53,17 @@ function verify_password($email) {
     }
 }
 
+function update_password($email, $password) {
+
+    $user = new User;
+
+    $run_query = $user->update_password($email, $password);
+        if ($run_query) {
+            return true;
+        } else {
+            return false;
+        }
+    
+}
+
 
