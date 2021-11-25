@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MYHOSTEL</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <h2><span>MyHostel</span></h2>
+                </div>
+                <div class = "site-nav">
+                    <h2><span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span></h2>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>Hostel Booking Made Easy</h2>
+                <p></p>
+                <button type = "button" class = "head-btn"> <a style="color: white; text-decoration:none"; href = './bookform/bookroom.php'> FIND A HOSTEL </a></button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#services">Services</a></li>
+                <li><a href = "#rooms">Hostels</a></li>
+                <li><a href = "#customers">Reviews</a></li>
+            </ul>
+            <button id='signup_btn' class = "btn sign-up" > <a style="color: white; text-decoration:none"; href = 'signup.php' > sign up </a> </button>
+            <button id='login_btn' class = "btn log-in"> <a style="color: white; text-decoration:none"; href = 'login.php'> log in </a> </button>
+
+            <div>
+                <button id='login_btn' class = "btn log-in"> <a style="color: white; text-decoration:none"; href = './views/manager_login.php'>Manager login </a> </button>
+            </div>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h1>Our Services</h1>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-certificate"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Hostel Booking</h2>
+                        <p>Save time finding and comparing hostel prices, facilities, locations & room types before you book so you can make an informed decision without stress.</p>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fa fa-money"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Easy Payment</h2>
+                        <p>We connect you to hostels on our platform, accredited and have undergone due diligence by our team. Payment made on the website would inform hostel managers.</p>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <section class = "rooms sec-width" id = "hostels">
+            <div class = "title">
+                <h1>Hostels</h1>
+            </div>
+            <div class = "hostel-container">
+                <!-- hostel -->
+                <article class = "hostel">
+                    <div class = "hostel-image">
+                        <img src = "images/dufie.jpg" alt = "hostel image">
+                    </div>
+                    <div class = "hostel-text">
+                        <h3>Dufie Hostel</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Contact: 026 144 6762
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Location: Berekuso, Ghana 
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Off Campus
+                            </li>
+                        </ul>
+                        <p>Dufie Platinum Hostel is one of the most popular hostels in Ashesi University College and known by most students. It is well equipped with modern facilities needed to make your stay as a student very comfortable and enjoyable. The rooms are very spacious with a very serene environment. Security in this hostel is top-notch.</p>
+                        <p class = "rate">
+                            Starting from <span>₵3500/</span> Per Semester
+                        </p>
+                            <button type = "button" class = "btn" name='dufie'> <a style="color:gray; text-decoration:none"; href = './Hostels/dufie.html'>More Info</a></button>
+                    </div>
+                </article>
+                <!-- end of hostel -->
+                <!-- hostel -->
+                <article class = "hostel">
+                    <div class = "hostel-image">
+                        <img src = "images/masere.JPG" alt = "hostel image">
+                    </div>
+                    <div class = "hostel-text">
+                        <h3>Masere Hostel</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Contact: 024 437 0272 
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Location: Berekuso, Ghana
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Off Campus
+                            </li>
+                        </ul>
+                        <p>Masere Hostel is well equipped with modern facilities needed to make your stay as a student very comfortable and enjoyable. The rooms are very spacious with a very serene environment. Security in this hostel is top-notch.</p>
+                        <p class = "rate">
+                           Starting From<span>₵3800 /</span> Per Semester
+                        </p>
+                        <button type = "button" class = "btn"><a style="color:gray; text-decoration:none"; href='./Hostels/masere.html'>More Info</a></button>
+                    </div>
+                </article>
+                <!-- end of hostel -->
+                <!-- hostel -->
+                <article class = "hostel">
+                    <div class = "hostel-image">
+                        <img src = "images/char.jpg" alt = "hostel image">
+                    </div>
+                    <div class = "hostel-text">
+                        <h3>Charlotte Hostel</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Contact: 026 638 4177
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Location: Berekuso, Ghana
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Off Campus
+                            </li>
+                        </ul>
+                        <p>Charlotte Court Hostel is well equipped with modern facilities needed to make your stay as a student very comfortable and enjoyable. The rooms are very spacious with a very serene environment. Security in this hostel is top-notch.</p>
+                        <p class = "rate">
+                            Starting From <span>₵2800 /</span> Per Semester
+                        </p>
+                        <button type = "button" class = "btn"><a style="color:gray; text-decoration:none"; href='./Hostels/charlotte.html'>More Info</a></button>
+                    </div>
+                </article>
+                <!-- end of hostel -->
+                <!-- hostel  -->
+                <article class = "hostel">
+                    <div class = "hostel-image">
+                        <img src = "images/tanko.JPG" alt = "hostel image">
+                    </div>
+                    <div class = "hostel-text">
+                        <h3>Tanko Hostel</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Contact: 024 419 4199
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Location: Berekuso, Ghana
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Off Campus
+                            </li>
+                        </ul>
+                        <p>Tanko Hostel is one of the most luxury hostels in Ashesi with modern facilities needed to make your stay as a student very comfortable and enjoyable. The rooms are very spacious with a very serene environment. Security in this hostel is top-notch.</p>
+                        <p class = "rate">
+                            Starting From<span>₵4000 /</span> Per Semester
+                        </p>
+                        <button type = "button" class = "btn"><a style="color:gray; text-decoration:none"; href='./Hostels/Tanko.html'>More Info</a></button>
+                    </div>
+                </article>
+                <!-- end of hostel -->
+                <!-- hostel  -->
+                <article class = "hostel">
+                    <div class = "hostel-image">
+                        <img src = "images/hosanna.jpg" alt = "hostel image">
+                    </div>
+                    <div class = "hostel-text">
+                        <h3>Hosanna Hostel</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Contact: 024 520 3348
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Location: Berekuso, Ghana
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Off Campus
+                            </li>
+                        </ul>
+                        <p>Hosanna Hostel is well equipped with modern facilities needed to make your stay as a student very comfortable and enjoyable. The rooms are very spacious with a very serene environment. Security in this hostel is top-notch.</p>
+                        <p class = "rate">
+                            Starting From<span>₵3000 /</span> Per Semester
+                        </p>
+                        <button type = "button" class = "btn"><a style="color:gray; text-decoration:none"; href='./Hostels/hosanna.html'>More Info</a></button>
+                    </div>
+                </article>
+                <!-- end of hostel -->            
+            </div>
+        </section>
+
+
+        <section class = "reviews" id = "reviews">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h1>Website Reviews</h1>
+                </div>
+                <div class = "reviews-container">
+                    <!-- single customer -->
+                    <div class = "review">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star-half"></i></span>
+                        </div>
+                        <h3>Easy booking</h3>
+                        <p>Saves student the stress of looking for hostel contact information and booking</p>
+                        <img src = "images/rev1.JPG" alt = "review image">
+                        <span>Prince Yeboah, CS</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "review">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <h3>Very reliable</h3>
+                        <p>Information on websites are reliable and are always updated</p>
+                        <img src = "images/rev2.JPG" alt = "review image">
+                        <span>Lianjayne Adjorkor, BA</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "review">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Simple payment method</h3>
+                        <p>Payment for hostels are simple</p>
+                        <img src = "images/rev3.jpg" alt = "review image">
+                        <span>Anita Appiah, BA</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+
+        <section>
+            <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(214622)</script> 
+        </section>
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>MyHostel is a website that allows students to find and compare hostel prices, facilities, locations & room types before they book so you can make an informed decision without stress.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Home</a>
+                    <a href = "#">Hostels</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            MyHostel, Accra, Ghana
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +233 2444 17579
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            myhostel@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>

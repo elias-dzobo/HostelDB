@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MYHOSTEL</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="masere.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <h2><span>MyHostel</span></h2>
+                </div>
+                <div class = "site-nav">
+                    <h2><span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span></h2>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>Masere Hostel</h2>
+                <p></p>
+                <button type = "button" class = "head-btn">Search Rooms</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "../home.html">Home</a></li>
+                <li><a href = "#services">Services</a></li>
+                <li><a href = "#rooms">Hostels</a></li>
+                <li><a href = "#customers">Reviews</a></li>
+            </ul>
+            <button class = "btn sign-up"><a style="color: white; text-decoration:none"; href = '../signup.php' > sign up </a> </button>
+            <button class = "btn log-in"><a style="color: white; text-decoration:none"; href = '../login.php'> log in </a></button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h4>Our Facilities</h4>
+            </div>
+            <div class = "facilitiesg1">
+                <li>
+                    <i class = "fas fa-star"></i>
+                    Wifi
+                </li>
+                <li>
+                    <i class = "fas fa-star"></i>
+                    Kitchen
+                </li>
+                <li>
+                    <i class = "fas fa-star"></i>
+                    Standby Generator
+                </li>
+            </div>
+            <div class = "facilitiesg2">
+                <li>
+                    <i class = "fas fa-star"></i>
+                    DSTV
+                </li>
+                <li>
+                    <i class = "fas fa-star"></i>
+                    Security
+                </li>
+                <li>
+                    <i class = "fas fa-star"></i>
+                    Garden Landscaping
+                </li>
+            </div>
+        </section>
+
+        <!--Image Hoover-->
+		<h1>Gallery</h1>
+		<div class="row">
+			<div class="hoover">
+				<div id="zoom-In">
+					<figure>
+						<img src="images/mbuilding.JPG" alt="" />
+					</figure>
+				</div>
+			</div>
+			<div class="hoover">
+				<div id="zoom-In">
+					<figure>
+						<img src="images/mcorridor.jpg" alt="" />
+					</figure>
+				</div>
+			</div>
+			<div class="hoover">
+				<div id="zoom-In">
+					<figure>
+						<img src="images/mcarpark.JPG" alt="" />
+					</figure>
+				</div>
+			</div>
+		</div>
+        
+        <section class = "rooms sec-width" id = "hostels">
+            <div class = "title">
+                <h1>Rooms</h1>
+            </div>
+            <div class = "hostel-container">
+                <!-- single room -->
+                <article class = "hostel">
+                    <div class = "hostel-image">
+                        <img src = "images/single.jpg" alt = "hostel image">
+                    </div>
+                    <div class = "hostel-text">
+                        <h3>Single Occupancy</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Rooms Available: 2
+                            </li>
+                        </ul>
+                        <p class = "rate">
+                            <span>₵9500/</span> Per Semester
+                        </p>
+                        <button type = "button" class = "btn"><a style="color: black; text-decoration:none"; href='../bookform/bookroom.php'>Book now</a></button>
+                    </div>
+                </article>
+                <!-- single room -->
+                <article class = "hostel">
+                    <div class = "hostel-image">
+                        <img src = "images/double.jpg" alt = "hostel image">
+                    </div>
+                    <div class = "hostel-text">
+                        <h3>Double Occupancy</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Rooms Available: 12
+                            </li>
+                        <p class = "rate">
+                           <span>₵5800/</span> Per Semester
+                        </p>
+                        <button type = "button" class = "btn"><a style="color: black; text-decoration:none"; href='../bookform/bookroom.php'>Book now</a></button>
+                    </div>
+                </article>
+                <!-- single room -->
+                <article class = "hostel">
+                    <div class = "hostel-image">
+                        <img src = "images/triple.jpg" alt = "hostel image">
+                    </div>
+                    <div class = "hostel-text">
+                        <h3>Triple Occupancy</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Rooms Available: 10
+                            </li>
+                        </ul>
+                        <p class = "rate">
+                            Starting from <span>₵4000/</span> Per Semester
+                        </p>
+                        <button type = "button" class = "btn"><a style="color: black; text-decoration:none"; href='../bookform/bookroom.php'>Book now</a></button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "hostel">
+                    <div class = "hostel-image">
+                        <img src = "images/quadriple.jpg" alt = "hostel image">
+                    </div>
+                    <div class = "hostel-text">
+                        <h3>Quadriple Occupancy</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Rooms Available: 20
+                            </li>
+                        </ul>
+                        <p class = "rate">
+                            <span>₵3500/</span> Per Semester
+                        </p>
+                        <button type = "button" class = "btn"><a style="color: black; text-decoration:none"; href='../bookform/bookroom.php'>Book now</a></button>
+                    </div>
+                </article>
+                <!-- end of single room -->                          
+            </div>
+        </section>
+
+        <section class = "reviews" id = "reviews">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h1>Hostel Reviews</h1>
+                </div>
+                <div class = "reviews-container">
+                    <!-- single review -->
+                    <div class = "review">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star-half"></i></span>
+                        </div>
+                        <h3>Very Quiet</h3>
+                        <img src = "images/rev1.JPG" alt = "review image">
+                        <span>Prince Yeboah, CS</span>
+                    </div>
+                    <!-- end of single review -->
+                    <!-- single review -->
+                    <div class = "review">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Accomodation</h3>
+                        <img src = "images/rev2.JPG" alt = "review image">
+                        <span>Lianjayne Adjorkor, BA</span>
+                    </div>
+                    <!-- end of single review -->
+                    <!-- single review -->
+                    <div class = "review">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Great Facilities</h3>
+                        <img src = "images/rev3.jpg" alt = "review image">
+                        <span>Anita Appiah, BA</span>
+                    </div>
+                    <!-- end of single review -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>MyHostel is a website that allows students to find and compare hostel prices, facilities, locations & room types before they book so you can make an informed decision without stress.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Home</a>
+                    <a href = "#">Hostels</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            MyHostel, Accra, Ghana
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +233 2444 17579
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            myhostel@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
