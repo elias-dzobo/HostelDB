@@ -72,7 +72,7 @@ if (isset($_GET['del_task'])) {
                             <td class="task"> <?php echo $row['room']; ?> </td>
                             <td class="task"> <?php echo $row['booking_date']; ?> </td>
                             <td class="delete"> 
-                                <a href="manager.php?del_task=<?php echo $row['booking_id'] ?>">x</a> 
+                            <button type="button" class="btn btn-outline-danger"><a style="text-decoration:none;" href="manager.php?del_task=<?php echo $row['booking_id'] ?>">Delete</a> </button>
                             </td>
                         </tr>
                     <?php } ?>	
