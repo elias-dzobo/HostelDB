@@ -75,7 +75,7 @@ session_start();
                             <option value="">Hostel</option>
                             <option value="Dufie">Dufie</option>
                             <option value="Masere">Masere</option>
-                            <option value="Hosanna">Hossana</option>
+                            <option value="Hosanna">Hosanna</option>
                             <option value="Tanko">Tanko</option>
                             <option value="Charlotte">Charlotte</option>
                         </select>
